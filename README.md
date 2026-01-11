@@ -2,5 +2,15 @@
 Simulation and optimization code for a simple linear swimmer made from three spheres linked by finitely ellastic springs and actuated with an oscillating magnetic field.
 
 ### Abstract: 
-When swimming at low Reynolds numbers, inertial effects are negligible and reciprocal movements cannot induce net motion. Instead, symmetry breaking is necessary to achieve net propulsion. Directed swimming can be supported by magnetic fields, which simultaneously provide a versatile means of remote actuation.  Therefore, we introduce and analyze the behavior of a straight three-sphere microswimmer consisting of magnetizable beads. The swimming mechanism is based on oriented external magnetic fields that oscillate in magnitude. Through induced reversible hysteretic collapse of the two segments of the swimmer, the two pairs of beads jump into contact and separate nonreciprocally. 
-Through higher-order hydrodynamic interactions, net displacement results after each cycle. Furthermore, different microswimmers can be tuned to different driving amplitudes and frequencies, allowing for simultaneous independent control by just one external magnetic field. The swimmer geometry and magnetic field shape are optimized for maximum swimming speed using an evolutionary optimization strategy. Thanks to the simple working principle, an experimental realization of such a microrobot seems feasible and may open new approaches for microinvasive medical interventions such as targeted drug delivery.
+When swimming at low Reynolds numbers, inertial effects are negligible and reciprocal movements cannot induce net motion. 
+Instead, symmetry breaking is necessary to achieve net propulsion. Directed swimming can be supported by magnetic fields, which simultaneously provide a versatile means of remote actuation. 
+Thus, we analyze the motion of a straight microswimmer composed of three magnetizable beads connected by two elastic links. The swimming mechanism is based on oriented external magnetic fields that oscillate in magnitude. Through induced reversible hysteretic collapse of the two segments of the swimmer, the two pairs of beads jump into contact and separate nonreciprocally. 
+Due to higher-order hydrodynamic interactions, net displacement results after each cycle. Different microswimmers can be tuned to different driving amplitudes and frequencies, allowing for simultaneous independent control by just one external magnetic field. 
+The swimmer geometry and magnetic field shape are optimized for maximum swimming speed using an evolutionary optimization strategy.
+Thanks to the simple working principle, an experimental realization of such a microrobot seems feasible and may open new approaches for microinvasive medical interventions such as targeted drug delivery.
+
+### File Overview:
+`swimmer.ipynb` contains the class definitions for swimmers, simulators and optimizers and runs a few optimizations and batch simulations generating the data in the `data` directory. 
+`plots.ipynb` contains the code for the plots shown in the article as well as a few additional ones, for example about the accuracy of the order expansion of the hydrodynamic interactions.
+
+
